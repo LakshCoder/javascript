@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Master</title>
+</head>
+	<script>
+		function a1()
+		{
+		a=document.form1.text1.value
+		b=document.form1.text2.value
+
+		a=eval(a)+eval(b)	// a=10+20  30
+		b=eval(a)-eval(b)	// b=30-20	 10
+		a=eval(a)-eval(b)	// a=30-10	20
+
+		document.write("The First Value is"+a+"<br>")
+		document.write("The Second Value is"+b)
+		}
+	</script>
+	
+		<body>
+		<form name="form1">
+		Enter The First Number:<input type="text" name="text1" value="">
+		<br>
+		Enter The Second Number:<input type="text" name="text2" value="">
+		<br>
+		<input type="button" value="clickMe" onclick="a1()">
+		</form>
+		</body>
+</html>

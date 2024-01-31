@@ -1,0 +1,28 @@
+Q14) Swaping with temporary value
+<html>
+<head>
+<title>Master</title>
+</head>
+	<script>
+		function a1()
+		{
+		a=document.form1.text1.value
+		b=document.form1.text2.value
+		c=a 	// C=10
+		a=b	// A=20
+		b=c	// B=10
+		document.write("The First Value is"+a+"<br>")
+		document.write("The Second Value is"+b)
+		}
+	</script>
+	
+		<body>
+		<form name="form1">
+		Enter The First Number:<input type="text" name="text1" value="">
+		<br>
+		Enter The Second Number:<input type="text" name="text2" value="">
+		<br>
+		<input type="button" value="clickMe" onclick="a1()">
+		</form>
+		</body>
+</html>
